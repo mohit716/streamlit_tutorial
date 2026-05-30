@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 
 st.title("Super Simple Title")
 st.header("This is a header")
@@ -12,3 +13,6 @@ def greet(name):
 st.code(code_example, language = "python")
 
 st.divider()
+
+st.image(os.path.join(os.getcwd(), "static", "BG.jpg"))
+st.image(os.path.join(os.getcwd(), "static", "BG.jpg"), width = 100)
